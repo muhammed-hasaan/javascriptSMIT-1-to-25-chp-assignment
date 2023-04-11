@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]];
+        for (var i = 0; i < arr.length; i++) {
+            document.write(arr[i].join(" "));
+            document.write("<br>");
+
+
+        }
+
+
+
+        // document.write(arr[0].join(" ")+"<br>"+arr[1].join(" ")+"<br>"+arr[2].join(" "));
+        // var arr=[1,2,3,4,5,6,7,8,9,10]
+        for (var i = 1; i <= 10; i++) {
+
+            document.write(i);
+            document.write("<br>");
+
+        }
+
+        var str = +(prompt("Enter the number to print the multiplication table for:"));
+        var end = +(prompt("Enter the length of the multiplication table:"));
+
+        for (let i = 1; i <= end; i++) {
+            //   document.write(`${str} x ${i} = ${str * i}`);
+            document.write(`${str} x ${i} = ${str * i} `);
+            document.write("<br>");
+        }
+
+
+
+        var arr = ["Apple", "Mango", "Banana", "Orange", "Strawbery"];
+
+        for (var i = 0; i < arr.length; i++) {
+
+            document.write(" Element at index " + i + " is " + arr[i]);
+            document.write("<br>");
+        }
+
+
+        var arr = ["Apple", "Mango", "Banana", "Orange", "Strawbery"];
+
+        for (var i = 0; i < arr.length; i++) {
+
+            document.write(" Element at index " + i + " is " + arr[i]);
+            document.write("<br>");
+
+
+
+
+        }
+
+
+
+        document.write("<h2>Counting</h2>")
+        for (var i = 1; i <= 15; i++) {
+
+            document.write(i + ", ");
+
+
+        }
+        document.write("<h2>Reverse</h2>")
+
+        for (var i = 10; i >= 1; i--) {
+
+            document.write(i + " ");
+        }
+
+        document.write("<h2>Even</h2>")
+        document.write("Even : ")
+        for (var i = 0; i <= 20; i++) {
+            if (i % 2 === 0) {
+                document.write(i + "  ");
+
+            }
+
+        }
+
+
+        document.write("<h2>Odd</h2>")
+        document.write("Odd : ")
+        for (var i = 0; i <= 20; i++) {
+            if (i % 2 === 1) {
+                document.write(i + "  ");
+
+            }
+
+        }
+
+        document.write("<h2>Series</h2>")
+        document.write("Series : ")
+        for (var i = 1; i <= 10; i++) {
+            document.write(2 * i + "k ");
+        }
+
+
+
+        var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+        for (var i = 0; i < fruits.length; i++) {
+            document.write(`Element at ${i} index is ` + fruits[i]);
+
+
+            document.write("<br>");
+        }
+
+        document.write(arr[0].join(" ") + "<br>" + arr[1].join(" ") + "<br>" + arr[2].join(" "));
+
+
+
+
+        var arr = ["Apple", "Mango", "Banana", "Orange", "Strawbery"];
+        var user = prompt("what do you want");
+
+        var ab = arr.indexOf(user);
+
+        if (ab !== -1) {
+            document.write(user + "Available at index " + ab);
+
+
+        }
+        else {
+
+            document.write(` We Are Sorry. ${user} is not available our bakery `);
+
+        }
+
+
+
+
+        var found = false;
+
+        for (var i = 0; i < arr.length; i++) {
+
+            if (user === arr[i]) {
+
+                document.write(user + "Available at index " + i);
+
+
+
+                found = true;
+            }
+
+
+
+
+        }
+
+        if (found === false) {
+            document.write(`We Are Sorry. ${user} is not available our bakery`);
+        }
+
+
+
+        document.write(arr[0].join(" ") + "<br>" + arr[1].join(" ") + "<br>" + arr[2].join(" "));
+
+
+
+
+        var arr = [24, 53, 78, 91, 12];
+        var b = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > b) {
+                b = arr[i];
+            }
+        }
+        document.write("Array Items : " + arr + "<br>");
+        document.write("Largest Number : " + b + " <br><br><br>");
+
+        var arr = [24, 53, 78, 91, 12, 1, 2];
+        var c = arr[0];
+
+        for (var i = 0; i < arr.length; i++) {
+            // var test=arr[i];
+            if (arr[i] < c) {
+
+                c = arr[i];
+            }
+
+        }
+        document.write("Array Items : " + arr + "<br>");
+        document.write("Smallest : " + c);
+
+
+
+
+        for (var i = 5; i <= 100; i += 5) {
+
+            document.write(i + "<br>")
+
+        }
+
+
+        var arr = [
+            [0, 1, 2, 3],
+            [1, 0, 1, 2],
+            [2, 1, 0, 1]
+        ];
+        for (var i = 0; i < arr.length; i++) {
+            document.write(arr[i].join(" "));
+            document.write("<br>");
+
+
+        }
+
+
+
+// document.write(arr[0].join(" ")+"<br>"+arr[1].join(" ")+"<br>"+arr[2].join(" "));
+
+
+    </script>
+</body>
+
+</html>
